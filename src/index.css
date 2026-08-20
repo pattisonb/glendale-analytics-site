@@ -1,13 +1,61 @@
+/* ==========================================================================
+   Glendale Analytics — global styles
+   Brand palette (GlendaleAnalyticsBranding.pdf):
+     Midnight   #022640
+     True Blue  #215D8D
+     Smokey     #73A1C2
+     Sky        #97BCD7
+     Pale Blue  #D5E7F1
+   Brand fonts are Rig Shaded (display) and Greycliff CF — both commercial.
+   Web-safe stand-ins: Poppins (headings) and Source Sans 3 (body).
+   ========================================================================== */
+
+:root {
+  --midnight: #022640;
+  --midnight-90: #0a3352;
+  --navy: #0e3f63;
+  --true-blue: #215d8d;
+  --smokey: #73a1c2;
+  --sky: #97bcd7;
+  --pale: #d5e7f1;
+  --pale-50: #eaf3f8;
+  --ink: #1d2b36;
+  --white: #ffffff;
+  --font-head: 'Archivo', 'Segoe UI', sans-serif;
+  --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4 {
+  font-family: var(--font-head);
+  color: var(--midnight);
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--true-blue);
 }

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" role="img" aria-label="Glendale Analytics logo">
+  <!-- Redrawn from the official mark: rounded hexagon, layered chevrons with side facets -->
+  <defs>
+    <clipPath id="hexclip">
+      <polygon points="100,12 185,60 185,160 100,208 15,160 15,60" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#hexclip)">
+    <rect x="0" y="0" width="200" height="220" fill="#ffffff" />
+
+    <!-- left facet columns -->
+    <polygon points="15,96 66,84 66,220 15,220" fill="#d5e7f1" />
+    <polygon points="15,122 66,110 66,220 15,220" fill="#aecbe0" />
+    <polygon points="15,150 66,138 66,220 15,220" fill="#215d8d" />
+
+    <!-- right facet columns -->
+    <polygon points="134,84 185,96 185,220 134,220" fill="#e4eef5" />
+    <polygon points="134,110 185,122 185,220 134,220" fill="#c9dcea" />
+    <polygon points="134,138 185,150 185,220 134,220" fill="#97bcd7" />
+
+    <!-- center chevron bands (apex up) -->
+    <polygon points="100,62 134,84 134,110 100,88 66,110 66,84" fill="#d5e7f1" />
+    <polygon points="100,88 134,110 134,138 100,116 66,138 66,110" fill="#97bcd7" />
+    <polygon points="100,116 134,138 134,170 100,148 66,170 66,138" fill="#73a1c2" />
+
+    <!-- midnight base filling to bottom -->
+    <polygon points="100,148 185,204 185,220 15,220 15,204" fill="#0b3a5c" />
+  </g>
+
+  <!-- hexagon frame -->
+  <polygon
+    points="100,12 185,60 185,160 100,208 15,160 15,60"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="17"
+    stroke-linejoin="round"
+  />
+</svg>
